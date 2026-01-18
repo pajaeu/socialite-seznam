@@ -1,0 +1,44 @@
+{
+	"name": "pajaeu/socialite-seznam",
+	"description": "Seznam.cz provider for Laravel Socialite",
+	"license": "MIT",
+	"keywords": [
+		"laravel",
+		"seznam",
+		"seznam.cz",
+		"oauth",
+		"provider",
+		"socialite"
+	],
+	"require": {
+		"php": "^8.4",
+		"illuminate/contracts": "^12.0",
+		"illuminate/http": "^12.0",
+		"illuminate/support": "^12.0",
+		"laravel/socialite": "^5.24"
+	},
+	"require-dev": {
+		"laravel/pint": "^1.27",
+		"rector/rector": "^2.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"Pajaeu\\SocialiteSeznam\\": "src/"
+		}
+	},
+	"scripts": {
+		"lint": [
+			"rector",
+			"pint --parallel"
+		]
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Pajaeu\\SocialiteSeznam\\SocialiteSeznamServiceProvider"
+			]
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
