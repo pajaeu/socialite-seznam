@@ -15,7 +15,7 @@ final class SocialiteSeznamProvider extends AbstractProvider
 
     private const string TOKEN_URL = 'https://login.szn.cz/api/v1/oauth/token';
 
-    private const string USER_URL = 'https://api.github.com/user';
+    private const string USER_URL = 'https://login.szn.cz/api/v1/user';
 
     /** @var string[] */
     protected $scopes = [
